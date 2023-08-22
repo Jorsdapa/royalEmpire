@@ -15,29 +15,24 @@
 
 <body>
 
-  <div class="wrapper">
+ <div class="wrapper">
     <div class="nav">
       <div class="logo">Royal Prime Partner</div>
 
       <div class="menu-links">
         <ul>
-          <li> <a href="index.html">Home</a></li>
-          <li> <a href="./pages/about.html">About US</a></li>
-          <li><a href="./pages/services.html">Services</a></li>
-          <li><a href="./pages/get_a_demo.html">Contact</a></li>
-          <li class="btn"><a href="./pages/get_a_demo.html"> Get a demo</a></li>
+          <li> <a href="index.html">Inicio</a></li>
+          <li> <a href="./pages/about.html">Nosotros</a></li>
+          <li><a href="./pages/services.html">Servicios</a></li>
+          <li><a href="./pages/contact.html">Contactanos</a></li>
+          <li class="btn"><a href="./pages/get_a_demo.html"> Agenda una demo</a></li>
        
         </ul>
       </div>
 
-     <!------ <div class="search"><i class="fa fa-search"></i></div>--->
-
-     <!----- <div class="account">my account</div>----->
-
-      <!---<div class="cart"><i class="i fa fa-shopping-cart"></i></div>---->
     </div>
 
-    <div class="content">
+   <!----- <div class="content">
       <div class="tagline">Find your clean juice</div>
 
       <div class="pages"><span>2</span>/21</div>
@@ -82,13 +77,13 @@
       </ul>
     </div>
 
-    <div class="arrows">
-      <button class="prev"><i class="fa fa-chevron-left"></i></button>
-      <button class="next"><i class="fa fa-chevron-right"></i></button>
-    </div>
+    <---<div class="arrows">
+      <button class="prev"><i class="fa fa-chevron-left"> <a href="#slide-1"></a></i></button>
+      <button class="next"><i class="fa fa-chevron-right"> <a href="#slide-2"></a></i></button>
+    </div>---
 
 
-  </div>
+  </div>----->
   <script>
     var scene = document.getElementById('scene');
     var parallax = new Parallax(scene);
@@ -210,6 +205,24 @@
     })
 
   </script>
+
+
+
+<section class="container">
+  <div class="slider-wrapper" style="margin-top: 8%;">
+    <div class="slider">
+      <img id="slide-1" src="./img/Royal.gif"/>
+      <img id="slide-2" src="./img/Amazon services.jpg"/>
+      <img id="slide-3" src="./img/Consulting.jpg"/>
+    </div>
+    <div class="slider-nav">
+      <a href="#slide-1"></a>
+      <a href="#slide-2"></a>
+      <a href="#slide-3"></a>
+    </div>
+  </div>
+
+</section>
 </body>
 
 </html>

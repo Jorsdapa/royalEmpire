@@ -1,0 +1,337 @@
+*{
+       margin: 0;
+       padding: 0;
+       box-sizing: border-box;
+       
+}
+
+body{
+       background: linear-gradient( 90deg,#0e3959 0%, #0e3959 30%,#03a9f5 30%, #03a9f5 100%);
+
+}
+
+.contactUs{
+       position: relative;
+       width: 100%;
+       padding: 40px 100px;
+}
+
+.contactUs .title{
+       display: flex;
+       justify-content: center;
+       align-items: center;
+       font-size: 2em;
+}
+
+.contactUs .title h2{
+       color: #fff;
+       font-weight: 500;
+}
+
+.form{
+       grid-area: form;
+}
+
+.info{
+       grid-area: info;
+}
+
+.map{
+       grid-area: map; 
+}
+
+.contact{
+       padding: 40px;
+       background: #fff;
+       box-shadow: 0 5px 35px rgba(0, 0, 0,0.15);
+}
+
+.box{
+       position: relative;
+       display: grid;
+       grid-template-columns: 2fr 1fr;
+       grid-template-rows: 5fr 4fr;
+       grid-template-areas: "form info" "form map";
+       grid-gap: 20px;
+       margin-top: 20px;
+       padding-left: 50px;
+       padding-right: 50px;
+}
+
+.contact h3{
+       color: #0e3959;
+       font-weight: 500;
+       font-size: 1.4em;
+       margin-bottom: 10px;
+
+}
+
+/*form*/
+.formBox{
+       position: relative;
+       width: 100%;
+
+}
+
+.formBox  .row50{
+display: flex;
+ gap: 20px;
+}
+
+.inputBox{
+       display: flex;
+       flex-direction: column;
+       margin-bottom: 10px;
+       width: 50%;
+}
+
+.formBox .row100 .inputBox{
+   width: 100%;
+}
+
+.inputBox span{
+       color: #03a9f5;
+       margin-top: 10px;
+       margin-bottom: 5px;
+       font-weight: 500;
+
+}
+
+.inputBox input{
+       padding: 10px;
+       font-size: 1.1em;
+       outline: none;
+       border: 1px solid #333;
+}
+
+.inputBox textarea{
+       padding: 10px;
+       font-size: 1.1em;
+       outline: none;
+       border: 1px solid #333;
+       resize: none;
+       min-height: 220px;
+       margin-bottom: 10px;
+}
+
+.inputBox input[type=submit]{
+       background: #ff578b;
+       color: #fff;
+       border: none;
+       font-size: 1.1em;
+       max-width: 120px;
+       font-weight: 500;
+       cursor: pointer;
+       padding: 14px 15px;
+
+}
+
+.inputBox ::placeholder{
+ color: #999;
+}
+
+/**info*/
+
+
+.info{
+       background: #0e3959;
+}
+
+.info h3{
+       color: #fff;
+}
+
+.info .infoBox div{
+       display: flex;
+       align-items: center;
+       margin-bottom: 10px;
+}
+
+
+.info .infoBox div span{
+       min-width: 40px;
+       height: 40px;
+       color: #fff;
+       background: #18b7ff;
+       display: flex;
+       justify-content: center;
+       align-items: center;
+       font-size: 1.5em;
+       border-radius: 50%;
+       margin-right: 15px;
+
+}
+
+.info .infoBox div p{
+       color: #fff;
+       font-size: 1.1em;
+}
+
+.info .infoBox div a{
+       color: #fff;
+       text-decoration: none;
+       font-size: 1.1em;
+}
+
+.sci{
+       margin-top: 40px;
+       display: flex;      
+}
+
+.sci li{
+       list-style: none;
+       margin-right: 15px;
+}
+
+.sci li a{
+       color: #fff;
+       font-size: 2em;
+       color: #ccc;
+}
+
+.sci li a:hover{
+       color: #fff;
+}
+
+
+.map{
+       padding: 0;
+}
+
+.map iframe{
+       width: 100%;
+       height: 100%;
+
+}
+
+
+/** responsive design **/
+
+
+@media (max-width:991px) {
+
+       body{
+              background: #03a9f5;
+       }
+       .contactUs{
+              padding: 20px;
+       }
+       .box{
+              position: relative;
+              display: grid;
+              grid-template-columns: 1fr;
+              grid-template-rows: auto;
+              grid-template-areas: "form" "info" "map";
+
+       }
+
+       .map{
+              min-height: 300px;
+
+       }
+
+       .formBox .row50{
+              display: flex;
+              gap: 0;
+              flex-direction: column;
+
+       }
+
+       .inputBox{
+              display: flex;
+              flex-direction: column;
+              margin-bottom: 10px;
+              width: 100%;
+       }
+
+       .contact{
+              padding: 30px;
+
+       }
+       .map{
+              min-height: 300px;
+              padding: 30px;
+       }
+
+       
+}
+
+
+ul {
+       list-style: none;
+     }
+     
+     .nav {
+       display: flex;
+       justify-content: space-around;
+       align-items: center;
+       padding-top: 20px;
+       text-transform: uppercase;
+       font-weight: 600;
+	padding-bottom: 20px;
+     }
+     
+     .logo {
+       font-size: 40px;
+     }
+     a{
+	color: black;
+      }
+     
+     .menu-links ul li {
+       display: inline-block;
+       padding-right: 20px;
+     }
+     
+     .search,
+     .cart {
+       font-size: 20px;
+     }
+/*body{
+	background: #000 ;
+	color: var(--text-color);
+}*/
+header{
+	position: fixed;
+	right: 0;
+	top: 0;
+	width: 100%;
+	z-index: 1000;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	background: black;
+	padding: 22px 16%;
+	border-bottom: 1px solid transparent;
+	transition: all .40s ease;
+}
+.logo img{
+	width: 15px;
+	height: 10px;
+}
+.logo a{
+	color: #fbfbfb;
+}
+.navbar{
+	display: flex;
+}
+.navbar a{
+	color: rgb(255, 255, 255);
+	font-size:20px;
+	font-weight: 600;
+	padding: 10px 25px;
+	margin: 0 2px;
+	border-radius: 0.5rem;
+	transition: all .40s ease;
+}
+.navbar a:hover{
+	background: #2fa4e7;
+	color: white;
+}
+#menu-icon{
+	font-size: 36px;
+	color: var(--text-color);
+	z-index: 10001;
+	cursor: pointer;
+	display: none;
+}

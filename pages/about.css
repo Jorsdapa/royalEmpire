@@ -85,7 +85,7 @@ header{
 	height: 10px;
 }
 .logo a{
-	color: #2fa4e7;
+	color: #fbfbfb;
 }
 .navbar{
 	display: flex;
@@ -135,7 +135,7 @@ section{
 	letter-spacing: 2px;
 }
 span{
-	background: -webkit-linear-gradient(  rgba(0, 212, 255,1) 37%, rgb(255,255,255) 100%);
+	background: -webkit-linear-gradient( #F2B035 37%, rgb(255, 255, 255) 100%);
 	-webkit-background-clip: text;
 	-webkit-text-fill-color: transparent;
 }
@@ -143,7 +143,7 @@ span{
 	/*background: -webkit-linear-gradient(  rgba(70,9,121,1) 37%, rgba(0,212,255,1) 100%);
 	-webkit-background-clip: text;
 	-webkit-text-fill-color: transparent;*/
-	color: #2fa4e7;
+	color: #F2B035;
 	font-size: 34px;
 	font-weight: 600;
 }
@@ -158,15 +158,15 @@ span{
 	border-radius: 0.5rem;
 	font-size: 17px;
 	font-weight: 500;
-	background: #2fa4e7;
+	background: #F2B035;
 	color: var(--text-color);
-	border: 1px solid #2fa4e7;
+	border: 1px solid #F2B035;
 	transition: all .40s ease;
 }
 .btn:hover{
 	transform: scale(1.01) translateY(-5px);
-	background: rgba(0,212,255,1);
-	border: 1px solid #2fa4e7;
+	background: #F2B035;
+	border: 1px solid #F2B035;
 }
 
 header.sticky{
@@ -183,7 +183,7 @@ header.sticky{
 }
 .about-text h4{
 	margin: 10px 0;
-	color: #2fa4e7;
+	color: #F2B035;
 	font-size: 20px;
 	font-weight: 600;
 }
@@ -211,6 +211,7 @@ header.sticky{
 	height: auto;
 	width: 100%;
 	max-width: 400px;
+	border-radius: 5%;
 }
 
 .main-text{
@@ -258,10 +259,10 @@ header.sticky{
 }
 .box:hover{
 	transform: scale(1.01) translateY(-5px);
-	border-top: 5px solid  rgba(0,212,255,1);
+	border-top: 5px solid #F2B035  ;
 }
 .box:hover h3{
-	color:rgba(0,212,255,1);
+	color:#F2B035;
 }
 
 .portfolio-content{
