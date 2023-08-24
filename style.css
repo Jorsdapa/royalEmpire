@@ -150,3 +150,11 @@
           line-height: 66px;
     }
   }
+
+
+  .texto-vertical-2 {
+    writing-mode: vertical-lr;
+    transform: rotate(180deg);
+    color: white;
+    font-size: 50PX;
+  }
